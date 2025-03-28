@@ -9,8 +9,11 @@ for i in range(linhas_a):
         linha.append(valor)
     matriz_a.append(linha)
     
+print("Matriz A:")
 for linha in matriz_a:
     print(linha)
+
+
 linhas_b = int(input('Quantidade de linhas: '))
 colunas_b = int(input('Quantidade de colunas: '))
 
@@ -22,8 +25,9 @@ for i in range(linhas_b):
         valor = int(input(f"Digite o valor para a posição [{i}][{j}]: "))
         linha.append(valor)
     matriz_b.append(linha)
-    
-for linha in matriz_b:
+
+print("Matriz B:")    
+for linha in matriz_b:    
     print(linha)
 if linhas_a != linhas_b or colunas_a != colunas_b:
     print('As matrizes não possuem as mesmas dimensões e não podem ser somadas!')
@@ -37,5 +41,6 @@ else:
             linha.append(soma)
         matriz_c.append(linha)
 
-    for linha in matriz_c:
-        print(linha)
+    print("Matriz C:")
+    for linha in matriz_c:        
+            print(linha)
